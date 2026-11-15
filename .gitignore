@@ -1,0 +1,8 @@
+# challenge data (not redistributable, too large for GitHub)
+*.csv
+# third-party documents
+*.pdf
+# python / jupyter
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
