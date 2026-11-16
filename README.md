@@ -78,11 +78,6 @@ pip install numpy pandas torch matplotlib jupyter
 
 **3. Run `main.ipynb` from top to bottom.** Training runs on CPU. The last cell writes `submission_lstm_entropic.csv` in the platform format.
 
-## Notes
-
-- **Scoring function.** The organisers did not publish their scoring code. Section 6 of the notebook uses a scoring function found in a participant's notebook ([Abdulaziz1607/NATIXIS-CHALLENGE](https://github.com/Abdulaziz1607/NATIXIS-CHALLENGE)). Our P&L reproduces it to about $10^{-6}$. It is consistent with the platform: 0.0589 locally vs 0.0597 on the platform, a gap compatible with the platform scoring a subset of the paths.
-- **Two conventions follow that scoring function** rather than the challenge text. The score is the entropic risk, not the "average replication cost" described on the page. The risk limit is centred on $-(\Delta^E_t - \psi_t\Delta^C_t)$.
-
 ## References
 
 - H. Buehler, L. Gonon, J. Teichmann, B. Wood, *Deep Hedging*, Quantitative Finance, 2019. [arXiv:1802.03042](https://arxiv.org/abs/1802.03042)
